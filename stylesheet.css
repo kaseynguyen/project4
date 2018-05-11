@@ -1,27 +1,76 @@
+body{
+	background: url("images/donald.jpg");
+	background-size: 100%;
+	font-family: "Rheiborn";
+}
+a:hover {
+    color: black;
+}
+a:link {
+    text-decoration: none;
+}
 .grid {
   border: 2px black solid;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
-.a {
+.navbar {
 	grid-column-start: 1;
 	grid-column-end: span 6;
 	grid-row-start: 1;
 	grid-row-end: span 1;
-	border: 1px black solid;	
+	border: 1px black solid;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+.menugrid {
+  display: grid;	
+  grid-template-rows: 10vh 10vh 10vh 10vh;
+  
+}
+.menu1 {
+	grid-column-start: 1;
+	grid-column-end: span 1;
+}
+.a {
+	grid-column-start: 1;
+	grid-column-end: span 6;
+	grid-row-start: 2;
+	grid-row-end: span 1;
+	border: 1px black solid;
 }
 .b {
 	grid-column-start: 1;
 	grid-column-end: span 3;
-	grid-row-start: 2;
+	grid-row-start: 3;
 	grid-row-end: span 1;
 	border: 1px black solid;
 }
 .c {
 	grid-column-start: 4;
 	grid-column-end: span 6;
-	grid-row-start: 2;
+	grid-row-start: 3;
 	grid-row-end: span 1;
 	border: 1px black solid;
 	
@@ -29,7 +78,7 @@
 .d {
 	grid-column-start: 1;
 	grid-column-end: span 6;
-	grid-row-start: 3;
+	grid-row-start: 4;
 	grid-row-end: span 1;
 	border: 1px black solid;
 	
@@ -37,7 +86,7 @@
 .e {
 	grid-column-start: 1;
 	grid-column-end: span 2;
-	grid-row-start: 4;
+	grid-row-start: 5;
 	grid-row-end: span 1;
 	border: 1px black solid;
 	
@@ -53,8 +102,12 @@
 .g {
 	grid-column-start: 5;
 	grid-column-end: span 2;
-	grid-row-start: 6;
+	grid-row-start: 5;
 	grid-row-end: span 1;
 	border: 1px black solid;
 	
+}
+@font-face {
+	font-family: "Rheiborn";
+	src: url("Rheiborn_Sans_Clean.ttf");
 }
